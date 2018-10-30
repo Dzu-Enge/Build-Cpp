@@ -6,14 +6,14 @@
             "type": "shell",
             "command": "",
             "args": [
-                "g++",
+				"g++",
                 "-g",
                 "${relativeFile}",
                 "-o",
-                "${fileBasenameNoExtension}.out",
+                "${fileBasenameNoExtension}",
                 "&&",
-                "./${fileBasenameNoExtension}.out"
-            ],
+                "./${fileBasenameNoExtension}",
+			],
             "group": {
                 "kind": "build",
                 "isDefault": true
