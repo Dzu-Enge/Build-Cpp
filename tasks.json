@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Play With C++",
+            "type": "shell",
+            "command": [
+                "g++ -Wall -std=c++11 ${file} -o ${fileBasenameNoExtension}; ./${fileBasenameNoExtension}"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ]
+}
